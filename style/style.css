@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+html{
+    background-color: rgb(24, 24, 24);
+}
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+    width: 100%;   
+    
+}
+.intro h2{
+    width: 100%;
+}
+.intro p{
+    padding: 1em 0;
+    flex-basis:50%;
+    font-size: 14px;
+}
+.informacion h4{
+    margin-top: 5em;
+}
+
+
+nav li{
+    list-style: none;
+    display: inline;
+}
+a{
+    color: white;
+    font-weight: bold;
+}
+.titulo{
+    background-image: url(../img/header.png);
+    color: white;
+    background-size: contain;
+    text-transform: uppercase;
+}
+/*NAV */
+nav{
+    background-color: rgb(10, 10, 10);
+    width: 100%;
+}
+
+nav a:hover{
+    background-color: rgb(24, 24, 24);
+
+} 
+
+article{
+    overflow-y: hidden;
+}
+iframe{
+    border: 0;
+}
+.informacion{
+    display: none;
+}
+ /*Footer */
+ footer{
+    background-color: rgb(10, 10, 10);
+}
+
+
+/*REGLAS PARA MOVIL*/
+@media (max-width: 480px) {
+    /*HEADER MOVIL*/
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        font-size: 25px;
+    }
+    /*NAV MOVIL */
+    .titulo{
+        width: 100%;
+    }
+    nav li a img{
+        width: 80px;
+        border-top: 4px solid white;       
+        padding: 4px 50px;
+    }
+    nav li:nth-child(4) a img{
+        border-bottom: 4px solid white;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        background-color: rgb(10, 10, 10);
+        width: 100%;
+    }
+    nav li{
+        display: flex;
+        justify-content: center;
+    }
+    nav a:hover{
+        background-color: rgb(24, 24, 24);
+        padding: 0 5em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /*ASIDE MOBIL*/
+    aside{
+        width: 100%;
+        margin-bottom: 4px;
+        padding:0 1em;
+    }
+    .navImagenes img{
+        display: none;
+    }
+    .delgado{
+        display: none;
+    }
+    /*CONTENIDO PAGINA*/
+    .contenido{
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        flex-direction: column;
+        
+    }
+    article{
+        padding:0 3%;
+    }
+    section{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }
+    .teclado{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 20em;
+    }
+    .intro {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 20em;
+        width: 100%;   
+        
+    }
+    .intro h2{
+        width: 100%;
+    }
+    .intro p{
+        padding: 1em 0;
+        flex-basis:50%;
+        font-size: 14px;
+    }
+    .informacion h4{
+        margin-top: 5em;
+    }
+    video{
+        width: 100%;
+        height: 20em;
+    }
+    .youtube{
+        width: 100%;
+        height: 20em;
+    }
+    /*IFRAME ARTICULOS*/
+    
+    .articulo_referencia{
+        width: 100%;
+    }
+    .articulo_referencia iframe{
+        width: 100%;
+        height: 100%;      
+        
+    }
+    
+    section img{
+        width: 40%;
+        margin: 0 1em;
+        height:15em;
+    } 
+    .leer_mas {
+        float: right;
+        font-size: 15px;     
+    }
+    .imagenLarga{
+        height: 9em;
+        width: 10em;
+    }
+    /*Footer */
+    footer{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(10, 10, 10);
+    }
+    .redesSociales{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .redesSociales img{
+        display: flex;
+        width: 8em;
+        margin: 1em 0;
+    }
+    .redesSociales a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .mapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 25em;
+    }
+    .mapa iframe{
+        width: 100%;
+    }
+}
+/*TABLETS*/
+@media (min-width: 481px) and (max-width: 1024px){
+    img{
+        width: 20em;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(/img/texturaFondo.jpg);
+        background-repeat: repeat;
+    }
+    /*HEADER*/
+    header{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .titulo{
+        width: 100%;
+    }
+    header h1{
+        font-size: 5em;
+        text-align: center;
+    }
+    .contenido{
+        background-color: rgb(24, 24, 24);
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 700px;
+    }
+    article h2{
+        font-size: 33px;
+    }
+    .contenido article{
+        width: 75%;
+    }
+    .contenido * *{
+        width: 100%;
+    }
+    /*Formulario*/
+    aside{
+        width: 20%;
+        height: 100%;
+        order: 2;
+        margin-top: 4em;
+        text-align: left;
+
+    }
+    aside h2{
+        margin: 0;
+        width: 100%;
+        font-size: 22px;
+    }
+    aside p{
+        font-size: 20px;
+    }
+    .form{
+        margin: 0;
+        width: 100%;  
+    }
+    .navImagenes{
+        margin-top: 2em;
+    }
+    .navImagenes img{
+        margin-top: 2em;
+        width: 100%;
+        margin: 0;
+    }
+    .tiempo{
+        width: 100%;
+        margin: 0 auto;
+    }
+    /*NAV PARA TABLETS*/
+    nav{
+        height: 40em;
+        padding-top: 2em;
+    }
+    ul li a img{
+        width: 50%;
+        
+    }
+    nav li{
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        height: 40%;
+        
+    }
+    nav li a{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+    }
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        padding: 0;
+
+    }
+    nav li a img{
+        border-top: 4px solid white;       
+        border-bottom: 4px solid white;
+    }
+    
+    video{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*ARTICULOS*/
+    section{
+        background-color: rgb(24, 24, 24);
+    }
+    .intro  p,.informacion p{
+        margin-left: 5%;
+        font-size: 16px;
+    }
+    .informacion h4{
+        font-size: 40px;
+    }
+    .intro{
+        height: 20em;
+    }
+    .youtube{
+        width: 100%;
+        height: 20em;
+    }
+    article a{
+        font-size: 35px;
+    }
+    /*IFRAME CONTENIDO*/
+    .intro img{
+        width: 12em;
+    }
+    .imagenLarga{
+        height: 12em;
+    }
+
+    /*FOOTER*/
+    footer{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer h2{
+        font-size: 40px;
+    }
+    footer p{
+        font-size: 30px;
+    }
+    footer div{
+        width: 40%;
+        margin: 0 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .redesSociales{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .redesSociales h2{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .redesSociales img{
+        
+        width: 10em;
+        height: 10em;
+    }
+    .footer_datos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .mapa{
+        width: 100%;
+        margin: 0;
+    }
+    .mapa iframe{
+        width: 100%;
+    }
+}
+
+/*ORDENADORES*/
+@media (min-width: 1025px) {
+/*HEADER*/
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(/img/texturaFondo.jpg);
+        background-repeat: repeat;
+    }
+    header{  
+        background-color: rgb(24, 24, 24);
+        position: fixed;
+        display: flex;
+        align-content: center;
+        text-align: left;
+        height: 6em;
+        width: 100%;
+    }
+    .titulo{
+        width: 30%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    nav{
+        display: flex;
+        width: 70%;   
+    }
+    nav ul {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    nav ul li{
+        margin: 0 2em;
+    }
+    nav ul li:hover{
+        height: 100%;
+        background-color: grey;
+    }
+    nav li a{
+        width: 100%;
+        height: 100%;
+    }
+    nav li a:hover{
+        background-color: grey;
+    }
+    nav img{
+
+        height: 100%;
+        width: 5em;
+    }
+    .contenido{
+        background-color: rgb(24, 24, 24);
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 1000px;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        order: 1;
+        width: 25%;
+        height:100%
+    }
+    .navImagenes{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .navImagenes img{
+        width: 100%;
+        height: 10em;
+    }
+    .delgado{
+        margin: 0 auto;
+    }
+    video{
+        width: 1000px;
+    }
+    article{
+        margin-left: 1%;
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+    }
+    article h2{
+        font-size: 48px;
+    }
+    .intro h2{
+        font-size: 40px;
+    }
+    .informacion h4{
+        font-size: 30px;
+    }
+    section iframe{
+        width: 100%;
+        height: 900px;
+    }
+    section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    /*FOOTER PC*/
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 1000px;
+    }
+    footer div{
+        width: 33%;
+    }
+    .footer_datos, .sitiosWeb{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .redesSociales{
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .redesSociales h2{
+        width: 100%;
+    }
+    .redesSociales img{
+        width: 4em;
+    }
+
+    .mapa{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mapa iframe{
+        width: 100%;
+    }
+}
